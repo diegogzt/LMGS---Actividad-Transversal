@@ -1,11 +1,45 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #000000; 
+}
+
+
 #logo {
     width: 95px;
 }
 
 
 
-    ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+.headerli,.ali {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    background-color: aqua;
+}
+
+.logo{
+    background-color: aquamarine;
+    width: min-content;
+}
+
+.titulo{
+    background-color: yellow ;
+    width: min-content;
+}
+
+.navh{
+    background-color: rgba(0, 0, 0, 0.249);
+    width: 60%;
+    height: 40px;
+    display: flex;
+}
+
+.headerli{
+    display: flex;
+}
