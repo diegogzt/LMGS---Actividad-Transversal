@@ -1,0 +1,67 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+html {
+    background-color: rgb(86, 86, 86);
+    color: var(--white);
+}
+
+#logo {
+    width: 95px;
+}
+
+
+
+.headerli,
+.ali {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.338);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: min-content;
+    filter: invert();
+
+}
+
+.titulo {
+    width: min-content;
+    color: #ffffff;
+}
+
+.navh {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+}
+
+.headerli {
+    display: flex;
+    font-size: small;
+}
+
+
+.lili {
+    margin: 10px;
+}
+
+#proffilefoto {
+    border-radius: 40px 40px 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
