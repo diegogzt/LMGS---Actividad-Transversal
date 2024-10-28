@@ -4,11 +4,6 @@
     --black: #000000;
 }
 
-html {
-    background-color: rgb(86, 86, 86);
-    color: var(--white);
-}
-
 #logo {
     width: 95px;
 }
