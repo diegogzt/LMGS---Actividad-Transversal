@@ -65,3 +65,12 @@ html {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+}
