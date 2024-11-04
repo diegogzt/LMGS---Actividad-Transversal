@@ -1,22 +1,44 @@
 
+html{
+    
+}
 
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #000000;
+    --fontbonita: Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+    --fonttext: Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+}
 /*HEADER FIN */
+#a-todo{
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
 
 .todo{
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-
 }
 
 #back{
-        background-image: url(../img/index/stains-texture-background-dark-671314-wallhere.com.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        animation: fondo 10s alternate-reverse infinite ;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            
 }
 footer{
     background-color: #0000003b;
@@ -28,17 +50,20 @@ body{
 
 #welcome-png{
     width: 400px;
+    z-index: -1;
 }
 
 .box-text{
     width: 500px;
     padding-left: 20px;
+
 }
 
 .bienvenida{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
 }
 
@@ -48,15 +73,16 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 4%;
+    z-index: 0;
 }
 
 .texto{
     color: var(--white);
+    font-family: var(--fonttext) ;
 }
 
 .main1{
     padding-bottom: 5.5%;
-    
 }
 
 
@@ -68,6 +94,7 @@ main{
         align-items: center;
         background-color: #000000;
         margin: 0;
+        z-index: 2;
 }
 .carrusel{
     display: flex;
@@ -85,6 +112,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 
@@ -204,3 +232,31 @@ main{
                 text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
                      -1px 0px 2px rgba(255, 255, 255, 0);
             }
+
+@keyframes fondo{
+    0%
+
+    
+        background-image: url(../img/index/before\ night.jpg);
+    }
+    25%{background-image: url(../img/index/nonight.jpg);
+    }
+    50%{
+        background-image: url(../img/index/night.jpg);
+    }
+    75%{
+        background-image: url(../img/index/before\ night.jpg);
+    }
+    100%{
+        background-image: url(../img/index/nonight.jpg);
+    }
+}
+
+
+.up{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #000000;
+}
