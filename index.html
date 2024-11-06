@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-< lang="es">
+<html lang="es">
+  <body>
+    
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel="stylesheet" type='text/css'>
+
 </head>
 <div>
-  <div id="back">   
-  <div  class="todo" >
-  <header>
+  <div  class="container-all" >
+    <header>
+      <div class="container-header">
+      <div id="back">   
     <div class="header">
       <a href="index.html" id="a-todo">
       <div class="logo">
@@ -33,83 +40,97 @@
             <img id="proffilefoto" src="img/index/perfil.png" alt="foto de perfil" >
         </nav>
       </div>
-      
+      </div>
     </header>  
     
-    <main class="main1">
-      
-      <div class="bienvenida">
-        <div class="box-text">
-          <p class="texto">
-            ¡Bienvenido a nuestro rincón dedicado a Linkin Park! Este espacio es para todos aquellos que sienten una conexión
-            especial con la música de esta increíble banda. Aquí podrás encontrar noticias, letras, videos, análisis de canciones,
-            entrevistas y mucho más. Pero lo más importante, este es un lugar para compartir tu pasión con otros fans, crear
-            amistades duraderas y celebrar juntos la herencia musical de Linkin Park. ¡Únete a nuestra comunidad y haz que tu voz se
-            escuche!
-          </p>
-        </div>
-        <div class="box-img">
-          <img id="welcome-png" src="img/index/pngwing.com.png" alt="">
-        </div>
+    <main class="main1" >
+      <button id="playButton" class="audio"> 
+        <img class="sound-img" src="img/index/sound-loud-svgrepo-com.svg" alt="Activar Sonido">
+      </button>
+      <button id="pauseButton" class="audio">
+        <img class="sound-img" src="img/index/sound-off-filled-svgrepo-com.svg" alt="Desactivar Sonido">
+      </button>
 
-      </div>
-      
-    </main>
-    </div>
-    <div class="up">
+      <audio id="myAudio">
+        <source src="img/index/DUKI, Myke Towers - Nueva Era.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+          <div id='stars'></div>
+          <div id='stars2'></div>
+          <div id='stars3'></div>
+          <div id='title'>
+            <span class="text-1">
+              Bienvenido a Meteora
+            </span>
+            <br>
+            <span class="text-2">
+              "La música es mi forma de expresar mis emociones más profundas y superar mis demonios internos."
+            </span>
+            <h1 id="chester">Chester Begnninton</h1>
 
-      <main class="todo2">
-        <div class="dostitulo">
-          <h1 id="dos">Navega sobre nuestra pagina web</h1>
-        </div>
-        <div class="carrusel">
-          <div class="slide">
-            <div class="slide-inner">
-              <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
-              <div class="slide-item">
-                <img src="https://th.bing.com/th/id/R.64227332faaff5d4780dcd4552c876e9?rik=8ZJHKXF98um8Wg&riu=http%3a%2f%2fwallpapersdsc.net%2fwp-content%2fuploads%2f2016%2f01%2fLinkin-Park-Pictures.jpg&ehk=5dmGkkQ6%2bnuw3DDqaVVzSp%2bnQiIamcZT8QZdd9VU9EI%3d&risl=&pid=ImgRaw&r=0">
-              </div>
-              <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
-              <div class="slide-item">
-                <img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/postgres_copy.png">
-              </div>
-              <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
-              <div class="slide-item">
-            <img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/excel_guardar_como_csv.jpg">
+            <a class="cta" id="scrollToMain">
+              <span class="span">Navegar</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
           </div>
-          <label for="slide-3" class="slide-control prev control-1">‹</label>
-          <label for="slide-2" class="slide-control next control-1">›</label>
-          <label for="slide-1" class="slide-control prev control-2">‹</label>
-          <label for="slide-3" class="slide-control next control-2">›</label>
-          <label for="slide-2" class="slide-control prev control-3">‹</label>
-          <label for="slide-1" class="slide-control next control-3">›</label>
-          <ol class="slide-indicador">
-            <li>
-              <label for="slide-1" class="slide-circulo">•</label>
-            </li>
-            <li>
-              <label for="slide-2" class="slide-circulo">•</label>
-            </li>
-            <li>
-              <label for="slide-3" class="slide-circulo">•</label>
-            </li>
-          </ol>
+    </main>
+    <main class="main2" id="main2">
+      <div class="container-main-2">
+        <div class="text-main2">
+          <h1>Navega sobre nuestra pagina</h1>
+        </div>
+        <div class="containter-cards">
+
+          <div class="cards">
+            <a href="introduccion.html">
+              <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1905&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img-1" class="img-card" id="card1" >
+              </a>
+            <div class="container-in-card">
+              <h5 class="title-card">Introducción</h5>
+              <p class="text-in-card">
+                Esto es una breve descripcion sobre la seccion, estoy haciendo una prueba sobre cuanto debe de medir y cuanto tiene que tener de altura,
+              </p>
+            </div>
+          </div>
+          <div class="cards"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-card" id="card2" href="artistas.html">
+            <div class="container-in-card">
+              <h5 class="title-card">Artistas</h5>
+            </div>
+          </div>
+          <div class="cards"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-card" id="card3" href="discografia.html">
+            <div class="container-in-card">
+              <h5 class="title-card">Discografia</h5>
+            </div>
+          </div>
+          <div class="cards"><img src="https://images.unsplash.com/photo-1536572701422-28e6051dd93f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-card" id="card4" href="galeria.html">
+            <div class="container-in-card">
+              <h5 class="title-card">Galeria</h5>
+            </div>
+          </div>
+          <div class="cards"><img src="https://plus.unsplash.com/premium_photo-1661962655543-b88aafe382e9?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-card" id="card5" href="merchandising.html">
+            <div class="container-in-card">
+              <h5 class="title-card">Merchandising</h5>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-</div>
+    </main>
+    
 
-    <footer>
-      <h1>asjda</h1>
-      <h2>anisdna</h2>
-    </footer>
+
+
     
   </div>
 
 
 </div>
 
-
+<div class="progress-container">
+  <div class="progress-bar"></div>
+</div>
+<script src="css/java/index.js"></script>
 </body>
 </html>
