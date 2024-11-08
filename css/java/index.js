@@ -6,6 +6,27 @@ window.onscroll = function() {
   progress.style.width = progressPercent + '%';
 };
 
+//CODIGO DE LA ANIMACION de la flecha
+
+window.addEventListener('scroll', function () {
+  const flecha = document.querySelector('.flecha');
+  if (window.scrollY > 1) { // Ajusta el valor según tus necesidades
+    flecha.classList.add('oculto');
+  } else {
+    flecha.classList.remove('oculto');
+  }
+});
+
+//Codigo de la animacion del texto de la flecha
+window.addEventListener('scroll', function () {
+  const flecha = document.querySelector('.text-flecha');
+  if (window.scrollY > 1) { // Ajusta el valor según tus necesidades
+    flecha.classList.add('oculto');
+  } else {
+    flecha.classList.remove('oculto');
+  }
+});
+
 // CODIGO DE LA ANIMACION HACIA EL MAIN
 
 const scrollToMainButton = document.getElementById('scrollToMain');
@@ -18,13 +39,21 @@ scrollToMainButton.addEventListener('click', () => {
 
 // CODIGO DEL AUDIO
 
-const playButton = document.getElementById('playButton');
+const playPauseButton = document.getElementById('playPauseButton');
+const playImage = document.getElementById('playImage');
+const pauseImage = document.getElementById('pauseImage');
 const audio = document.getElementById('myAudio');
+let isPlaying = false;
 
-playButton.addEventListener('click', () => {
-  audio.play();
-});
-
-pauseButton.addEventListener('click', () => {
-  audio.pause();
+playPauseButton.addEventListener('click', () => {
+  if (isPlaying) {
+    audio.pause();
+    playImage.style.display = 'block';
+    pauseImage.style.display = 'none';
+  } else {
+    audio.play();
+    playImage.style.display = 'none';
+    pauseImage.style.display = 'block';
+  }
+  isPlaying = !isPlaying;
 });

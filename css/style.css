@@ -25,6 +25,7 @@ body{
     display: flex;
         justify-content: center;
         align-items: center;
+    margin-left: 30px;
 }
 
 /* Imagen de sonido del boton */
@@ -34,22 +35,39 @@ body{
     filter: invert();
 }
 
-#playButton{
+.sound-img::after{
+    .popupflecha{
+        opacity: 0;
+    }
+}
+
+/* Flecha que señala al boton */
+    .popupflecha{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        margin-left: 75px;
+        margin-top: 3px;
+        
+    }
+
+.flecha{
+    rotate: 230deg;
+    width: 120px;
+    filter: invert();
+    animation: flecha 7s infinite none;
+}
+.oculto{
+    opacity: 0;
+}
+.text-flecha{
     margin-left: 30px;
-    
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+    animation: text-flecha 7s infinite;
 }
-
-#pauseButton{
-    margin-top: 40px;
-    margin-left: 30px;
-    transition: 0.5s ease;
-}
-
-#playButton::before{
-    margin-left: 20px;
-}
-
-
 
 
 /* Comienzo de barra de progreso */
@@ -107,24 +125,39 @@ main{
 
 .main1{
     overflow: hidden;
-    width: 99dvw;
+    width: fit-content;
     margin: 0;
     padding: 0;
+    display: flex;
 
 }
+
+.center-main{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-child{
+    width: 50%;
+}
+
 #title {
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    right: 0;
     color: #FFF;
     text-align: center;
     font-family: "lato", sans-serif;
     font-weight: 300;
-    font-size: 50px;
+    font-size: xxx-large;
     letter-spacing: 5px;
     margin-top: -60px;
-    padding-left: 10px;
     width: 50%;
     min-width: 500px;
 }
@@ -253,6 +286,7 @@ main{
     height: 100dvh;
     background-color: #000000;
     box-shadow: 0px 0px 200px 90px black;
+    
 }
 
 
@@ -263,6 +297,7 @@ main{
     align-items: center;
     width: 100%;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 .text-main2{
@@ -277,6 +312,7 @@ main{
     text-align: center;
     color: var(--white);
     font-family: "lato", sans-serif;
+    flex-wrap: wrap;
 } 
 .containter-cards{
     display: flex;
@@ -287,6 +323,7 @@ main{
     margin-left: 5px;
     border-radius: 2em;
     overflow: hidden;
+    
 }
 
 .cards{
@@ -346,4 +383,198 @@ main{
     padding-left: 15px;
     font-size: small;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+/* 
+estilos de main2 
+*/
+
+.main-2-child-main3{
+    width: 100dvw;
+    height: 100dvh;
+    color: var(--white);
+}
+
+.main-3-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-3-container-title{
+    height: 100%;
+    width:100%;
+}
+.main-3-contianer-img{
+    width:60%;
+    height: min-content;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+
+}
+.animated{
+    width: 100%;
+
+}
+
+
+
+
+.title-main-3{
+    font-family: var(--fonttext);
+    width: 100%;
+}
+
+.main-3-text-title{
+    font-family: var(--fonttext);
+    width: 70%;
+}
+
+.main-3-container-child{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button-main-3{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.container-container-child-container-main-3{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+/* Botones de contactar y mas info*/
+
+.portfolio-experiment a {
+    color: white;
+    padding: 0.3em calc(0.3em * 1.2);
+    display: inline-block;
+    border: 3px solid transparent;
+    position: relative;
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: 0.07em;
+}
+
+.portfolio-experiment a .text {
+    font-family: proxima-nova, monospace;
+    transform: translate3d(0, 0.7em, 0);
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.portfolio-experiment a:after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: calc(0.1em * 1.2);
+    right: calc(0.1em * 1.2);
+    height: 2px;
+    background: #ffffff;
+    transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+    transform-origin: left;
+}
+
+.portfolio-experiment .line {
+    position: absolute;
+    background: #ffffff;
+}
+
+.portfolio-experiment .line.-right,
+.portfolio-experiment .line.-left {
+    width: 2px;
+    bottom: -3px;
+    top: -3px;
+    transform: scale3d(1, 0, 1);
+}
+
+.portfolio-experiment .line.-top,
+.portfolio-experiment .line.-bottom {
+    height: 2px;
+    left: -3px;
+    right: -3px;
+    transform: scale3d(0, 1, 1);
+}
+
+.portfolio-experiment .line.-right {
+    right: -3px;
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+    transform-origin: top;
+}
+
+.portfolio-experiment .line.-top {
+    top: -3px;
+    transition: transform 0.08s linear 0.43s;
+    transform-origin: left;
+}
+
+.portfolio-experiment .line.-left {
+    left: -3px;
+    transition: transform 0.08s linear 0.51s;
+    transform-origin: bottom;
+}
+
+.portfolio-experiment .line.-bottom {
+    bottom: -3px;
+    transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+    transform-origin: right;
+}
+
+.portfolio-experiment a:hover .text,
+.portfolio-experiment a:active .text {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.portfolio-experiment a:hover:after,
+.portfolio-experiment a:active:after {
+    transform: scale3d(0, 1, 1);
+    right: 3px;
+    left: 3px;
+    transform-origin: right;
+    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+
+.portfolio-experiment a:hover .line,
+.portfolio-experiment a:active .line {
+    transform: scale3d(1, 1, 1);
+}
+
+.portfolio-experiment a:hover .line.-right,
+.portfolio-experiment a:active .line.-right {
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+    transform-origin: bottom;
+}
+
+.portfolio-experiment a:hover .line.-top,
+.portfolio-experiment a:active .line.-top {
+    transition: transform 0.08s linear 0.4s;
+    transform-origin: right;
+}
+
+.portfolio-experiment a:hover .line.-left,
+.portfolio-experiment a:active .line.-left {
+    transition: transform 0.08s linear 0.48s;
+    transform-origin: top;
+}
+
+.portfolio-experiment a:hover .line.-bottom,
+.portfolio-experiment a:active .line.-bottom {
+    transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+    transform-origin: left;
 }

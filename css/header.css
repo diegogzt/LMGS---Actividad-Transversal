@@ -34,11 +34,13 @@
 
 .header {
     background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(4px);
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: fixed;
+    z-index: 20;
 }
 
 .logo {
