@@ -1,0 +1,149 @@
+html {
+    text-decoration: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    background: radial-gradient(ellipse at bottom, #101820 0%, #090a0f 100%);
+}
+
+.main1 {
+    overflow: hidden;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.center-main {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-child {
+    width: 50%;
+}
+
+#title {
+    color: #FFF;
+    text-align: center;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-size: xxx-large;
+    letter-spacing: 5px;
+    margin-top: -60px;
+    width: 50%;
+    min-width: 500px;
+}
+
+#title span {
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-2 {
+    font-size: 1.5rem;
+    text-wrap: flex;
+    width: 20px;
+
+}
+
+#chester {
+    color: #ffffff27;
+    text-align: center;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-style: oblique;
+}
+.shadow-effect {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0a0a0a56;
+    /* Color base del botón */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Transición suave del efecto de sombra */
+}
+
+.shadow-effect:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-style: ridge;
+    border-color: #ffffff4b;
+
+    /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+
+.cta {
+    display: flex;
+    width: max-content;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(1, 41, 66, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
+.cta .span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.cta svg {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ffffff;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: rgba(1, 41, 66, 0.5);
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.96);
+}
