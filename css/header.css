@@ -97,3 +97,43 @@ html{
     margin: 0px;
     padding: 0px;
 }
+
+
+
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+    nav {
+        display: none;
+        /* Ocultamos el menú normal */
+    }
+
+    /* Botón para activar el menú desplegable */
+    .menu-toggle {
+        display: block;
+        background: #ccc;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* Menú desplegable */
+    .dropdown {
+        display: none;
+        background: #f0f0f0;
+        width: 100%;
+    }
+
+    .menu-toggle:checked+.dropdown {
+        display: block;
+    }
+
+    /* Estilos para los elementos del menú desplegable */
+    .dropdown ul {
+        flex-direction: column;
+    }
+
+    .dropdown li {
+        margin: 0;
+    }
+}
