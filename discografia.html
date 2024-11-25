@@ -7,32 +7,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/dis.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/background-minutes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="header">
-            <div class="logo">
-                <img id="logo" src="img/index/pngegg.png" alt="logo" srcset="">
-            </div>
-            <div class="titulo">
-                <h1>Meteora</h1>
-            </div>
-            <nav class="navh">
-                <ul class="headerli">
-                    <li class="lili"><a class="ali" href="introduccion.html">Introducción</a></li>
-                    <li class="lili"><a class="ali" href="artistas.html">Artistas</a></li>
-                    <li class="lili"><a class="ali" href="discografia.html">Discografia</a></li>
-                    <li class="lili"><a class="ali" href="galeria.html">Galeria de fotos</a></li>
-                    <li class="lili"><a class="ali" href="merchandising.html">Merchandising</a></li>
-                    <li class="lili"><a class="ali" href="nosotros.html">Nosotros</a></li>
-                    <li class="lili"><a class="ali" href="contacto.html">Contacto</a></li>
+            <a href="index.html" id="a-todo">
+                <div class="logo">
+                    <img id="logo" src="img/index/pngegg.png" alt="logo" srcset="">
+                </div>
+                <div class="titulo">
+                    <h1>Meteora</h1>
+                </div>
+            </a>
+            <nav id="nav1">
+                <ul class="list-container">
+                    <a href="introduccion.html"><li class="li">Introducción</li></a>
+                    <a href="artistas.html"><li class="li">Artistas</li></a>
+                    <a href="discografia.html"><li class="li">Discografía</li></a>
+                    <a href="galeria.html"><li class="li">Galería</li></a>
+                    <a href="contacto.html"><li class="li">Contacto</li></a>
+                    <a href="nosotros.html"><li class="li">Nosotros</li></a>
                 </ul>
-                <img id="proffilefoto" src="img/index/perfil.png" alt="foto de perfil">
             </nav>
+            <nav id="nav2">
+                <div class="dropdown">
+                    <button class="dropdown-button">☰</button>
+                    <div class="dropdown-content">
+                        <a class="lili" href="introduccion.html">Introducción</a>
+                        <a class="lili" href="artistas.html">Artistas</a>
+                        <a class="lili" href="discografia.html">Discografía</a>
+                        <a class="lili" href="galeria.html">Galería</a>
+                        <a class="lili" href="merchandising.html">Merchandising</a>
+                        <a class="lili" href="nosotros.html">Nosotros</a>
+                        <a class="lili" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+            </header>
+    
         </div>
-
+    
     </header>
+
+    <main id="main-1">
+        <div class="welcome">
+            <h1 id="title-welcome">Discografía principal</h1>
+            <p class="texto-welcome">Desde sus inícios siempre han triunfado disco tras disco, vamos a repasar sus mejores proyecto...</p>
+        </div>
+    </main>
+
+<script src="css/java/disc.js"></script>
 </body>
 
 </html>

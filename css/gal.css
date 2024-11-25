@@ -1,3 +1,9 @@
+
+
+/* HEADER MEDIA */
+
+
+
 /* Comienzo de barra de progreso */
 
 ::-webkit-scrollbar {
@@ -36,6 +42,7 @@
         Tahoma,
         sans-serif;
     --boton-hoover: rgba(1, 41, 66, 0.5);
+    --background: radial-gradient(ellipse at bottom, #101820 0%, #090a0f 100%);
 }
 
 /*HEADER FIN */
@@ -49,7 +56,7 @@ html {
 
 main {
     padding: 0px;
-    margin: 0px;
+    margin: 0px;    
 
 }
 
@@ -68,6 +75,7 @@ main {
     display: flex;
     justify-items: center;
     align-items: center;
+        margin-top: 34px;
 }
 
 .center {
@@ -276,9 +284,11 @@ body{
 }
 
 .image:hover{
-    border: 2px solid white;
     cursor: pointer;
     scale: 1.05;
     opacity: 1;
     filter: brightness(100%);
+
 }
+
+
