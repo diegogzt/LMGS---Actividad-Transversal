@@ -56,6 +56,8 @@ body{
     width: 120px;
     filter: invert();
     animation: flecha 7s infinite none;
+    opacity: 0.3;
+    animation: flecha 3s ease-out 1s both  ;
 }
 
 .oculto{
@@ -68,6 +70,8 @@ body{
     font-size: 15px;
     padding-top: 5px;
     animation: text-flecha 7s infinite;
+    opacity: 0.3;
+        animation: flecha 3s ease-out 1s both;
 }
 
 @media (max-width: 600px) {
@@ -588,4 +592,14 @@ estilos de main2
 .portfolio-experiment a:active .line.-bottom {
     transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
     transform-origin: left;
+}
+
+@keyframes flecha {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
 }

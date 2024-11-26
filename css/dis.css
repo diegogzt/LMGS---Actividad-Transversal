@@ -1,14 +1,30 @@
 html{
-    background-color:#22232a  ;
+    overflow-x: hidden;
+background-color: var(--secundary-color);}
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #000000;
+    --fontbonita: Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+    --fonttext: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    --boton-hoover: rgba(0, 0, 0, 0.5);
+    --header: linear-gradient(180deg, rgba(0, 0, 0, 0.636) 0%, rgba(1, 0, 18, 0.533) 30%, rgba(255, 255, 255, 0.008) 100%);
+    --font-color: #ffff; 
+    --primary-color: #11151c;
+    --secundary-color: #1a2332;
 }
 
 #main-1{
-    background-color: rgba(5, 22, 82, 0.265);
     width: 100dvw;
     height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0%;
 }
 
 .welcome{
@@ -31,3 +47,117 @@ html{
     max-width: 70%;
     
 }
+
+
+#main-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:
+    var(--primary-color);
+    padding-top: 5em;
+    border-top-left-radius:3em ;
+    border-top-right-radius: 3em;
+    height: 100dvh;
+    width: 100dvw;
+} 
+.container-main-2{
+    width: 90dvw;
+    margin-inline: 3%;
+}
+
+ul{
+    list-style: none;
+    padding-inline: 1rem;
+}
+
+
+li{
+    list-style: none;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    grid-gap: 3rem;
+    margin: 0rem 0;
+    
+}
+
+.container-items a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 0.7em;
+    height: 300px;
+    
+}
+
+
+.item-container{
+    border-radius: 0.5em;
+    height: 100%;
+    transition: 0.3s linear;
+    overflow: hidden;
+}
+
+.img-container{
+    object-fit: cover;
+    border-radius: 0.7em;
+    transition: 0.3s linear;
+    display: flex;
+    justify-content: center;
+}
+
+.text-contianer{
+    position: relative;
+    bottom: 19rem;
+    transition: 0.3s linear;
+}
+
+.text-contianer h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 8px 0px 20px black;
+    margin-left: 1rem;
+    transition: 0.3s linear;
+}
+
+.text-contianer p{
+    opacity: 0;
+    width: 90%;
+    margin-left: 1rem;
+    transition: 0.3s linear;
+    margin-top: 70px;
+}
+
+.item-container:hover img{
+    opacity: 50%;
+    scale: 1.05;
+}
+
+.item-container:hover{
+    scale: 1.08;
+    background-color: #000000;
+}
+
+.item-container:hover .text-contianer p{
+        opacity: 1;
+        margin-top: 0px;
+}
+
+
+
+.welcome{
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+/* CODIGO DE CARDS CONTAINER IN GRID 
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+grid-gap: 3rem;
+margin: 2rem 0;
+*/
