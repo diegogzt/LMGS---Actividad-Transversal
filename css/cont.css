@@ -1,0 +1,376 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    color: var(--font-color);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #000000;
+    --fontbonita: Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+    --fonttext: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --boton-hoover: rgba(0, 0, 0, 0.5);
+    --header: linear-gradient(180deg, rgba(0, 0, 0, 0.636) 0%, rgba(1, 0, 18, 0.533) 30%, rgba(255, 255, 255, 0.008) 100%);
+    --font-color: #000000;
+    --primary-color: #000000;
+    --secundary-color: #f1f1f1;
+    --tree-color: #FFFFFF; 
+    --transparente: #ffffff00; 
+}
+
+html {
+    overflow-x: hidden;
+    background: var(--secundary-color);
+}
+
+*{
+    color: #000000;
+}
+
+#logo{
+    filter: invert();
+}
+
+header *{
+    font-weight: bold;
+}
+
+
+nav a:hover, li:hover{
+    color: #ffffff;
+}
+
+html{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, p{
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#main-2{
+    height: 70dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contianer{
+    background-color: var(--tree-color);
+    width: 70%;
+    height: 90%;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    box-shadow: 1px 0px 16px  rgb(108, 107, 107);
+    display: flex
+}
+
+.ifnormation{
+    margin: 0.2rem;
+    background-color: var(--primary-color);
+    height: 99%;
+    width: 42%;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0rem;
+}
+
+.ifnormation *{
+    color: #FFFFFF;
+}
+
+.fomulario{
+    background-color: var(--tree-color);
+    width: 90%;
+}
+
+.container-information{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title-information{
+    text-align: center;
+    
+}
+
+.title-information h2, .title-information p{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.title-information h2{
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.title-information p{
+    color: #ffffff90;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.contianer-adres{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.links{
+    width: 100%;
+    height: 10%;
+    padding-left: 1.6rem;
+}
+
+.espan{
+    padding-right: 1rem;
+}
+
+.espan img{
+    width: 1.2rem;
+    filter: invert();
+}
+.adress {
+    padding-left: 10%;
+}
+.adress p{
+    padding-bottom: 1.6rem;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+.icon-social{
+    margin-left: 0.8rem;
+    padding: 0.4rem;
+    border-radius: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background, 0.3s linear;
+}
+
+.links a{
+    margin-bottom: 2rem;
+
+}
+
+
+.icon-social img{
+    width: 1.2rem;
+    filter: invert(100%);
+    transition: filter, 0.3s linear ;
+}
+.icon-social:hover{
+    background-color: #FFFFFF;
+}
+
+.icon-social:hover img{
+    filter: invert(0%);
+}
+/* fin del header */
+
+
+
+
+/*FOrmulario*/
+
+#formulario{
+    padding: 0%;
+}
+
+.li-form{
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.input{
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--transparente);
+    border-bottom:1px solid rgb(179, 179, 179);
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+
+
+.form__field {
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 0.8rem;
+    color: #000000;
+    padding: 7px 0;
+    transition: border-color 0.2s;
+    border-bottom: 1px solid black;
+}
+
+
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+
+
+.form__field:focus {
+    padding-bottom: 6px;
+    border-image: linear-gradient(to right, #010546, #38ef7d);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+ul *{
+    list-style: none;
+    color: var(--primary-color);
+}
+
+fieldset{
+    border: none;
+}
+
+.font{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#name, #email{
+    width: 40%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#apellido, #tel{
+    width: 40%;
+}
+
+#Mensaje{
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+textarea{
+    resize: none;
+    outline: none;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.675);
+}
+
+
+.mensajeaerea{
+    display: list-item;
+    list-style: none;
+}
+#politica{
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+#politica-de-privacidad{
+    margin-top: 10%;
+}
+
+.form{
+    margin-bottom: 50px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+}
+
+.apt{
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: 10%
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-right: 4px;
+}
+
+#contactar-button{
+    display: flex;
+    justify-content: right;
+}
+
+ li{
+    background-color: var(--transparente);
+ }
+.nate{
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+}
+
+#button{
+    width: 25%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+
+#label-contactar{
+    display: none;
+}
