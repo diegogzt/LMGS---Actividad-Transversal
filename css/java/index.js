@@ -57,3 +57,26 @@ playPauseButton.addEventListener('click', () => {
   }
   isPlaying = !isPlaying;
 });
+
+//ENLACES A PAGINAS
+
+        document.getElementById("1").addEventListener("click", () => {
+    window.location.href = "introduccion.html";
+        });
+
+
+document.getElementById("2").addEventListener("click", () => {
+  window.location.href = "artistas.html";
+});
+
+document.getElementById("3").addEventListener("click", () => {
+  window.location.href = "discografia.html";
+});
+
+document.getElementById("4").addEventListener("click", () => {
+  window.location.href = "galeria.html";
+});
+
+document.getElementById("5").addEventListener("click", () => {
+  window.location.href = "nosotros.html";
+});

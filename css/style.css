@@ -603,3 +603,7 @@ estilos de main2
         opacity: 0;
     }
 }
+
+a{
+    text-decoration: none;
+}

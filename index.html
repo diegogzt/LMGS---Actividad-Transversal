@@ -120,7 +120,7 @@
         </div>
         <div class="containter-cards">
 
-          <div class="cards">
+          <div class="cards" id="1">
             <a href="introduccion.html">
               <img src="img/introduccion/03.jpg" alt="img-1" class="img-card" id="card1" >
               </a>
@@ -132,7 +132,7 @@
               </p>
             </div>
           </div>
-          <div class="cards"><img src="img/index/arts.webp" class="img-card" id="card2" href="artistas.html">
+          <div class="cards" id="2"><img src="img/index/arts.webp" class="img-card" id="card2" href="artistas.html">
             <div class="container-in-card">
               <h5 class="title-card">Artistas</h5>
               <p class="text-in-card">
@@ -141,7 +141,7 @@
               </p>
             </div>
           </div>
-          <div class="cards"><img src="img/index/Discografia.jpg" alt="discografia" class="img-card" id="card3" href="discografia.html">
+          <div class="cards" id="3"><img src="img/index/Discografia.jpg" alt="discografia" class="img-card" id="card3" href="discografia.html">
             <div class="container-in-card">
               <h5 class="title-card">Discografia</h5>
               <p class="text-in-card">
@@ -150,7 +150,7 @@
               </p>
             </div>
           </div>
-          <div class="cards"><img src="img/index/formzero.webp" alt="" class="img-card" id="card4" href="galeria.html">
+          <div class="cards" id="4"><img src="img/index/formzero.webp" alt="" class="img-card" id="card4" href="galeria.html">
             <div class="container-in-card">
               <h5 class="title-card">Galeria</h5>
               <p class="text-in-card">
@@ -160,7 +160,8 @@
               </p>
             </div>
           </div>
-          <div class="cards"><img src="img/index/GettyImages-75260139.webp" alt="" class="img-card" id="card5" href="merchandising.html">
+          
+          <div class="cards" id="5"><img src="img/index/GettyImages-75260139.webp" alt="" class="img-card" id="card5" href="merchandising.html">
             <div class="container-in-card">
               <h5 class="title-card">Nosotros</h5>
               <p class="text-in-card">
@@ -182,19 +183,29 @@
               </p>
               <div class="button-main-3 portfolio-experiment">
                 <a class="btn">
-                  <span class="text">Contactar</span>
+                  <span class="text" id="con">Contactar</span>
                   <span class="line -right"></span>
                   <span class="line -top"></span>
                   <span class="line -left"></span>
                   <span class="line -bottom"></span>
                 </a>
+                <script>
+                  document.getElementById("con").addEventListener("click", () => {
+                    window.location.href = "contacto.html";
+                  });
+                </script>
                 <a class="btn">
-                  <span class="text">Mas info</span>
+                  <span class="text" id="info">Mas info</span>
                   <span class="line -right"></span>
                   <span class="line -top"></span>
                   <span class="line -left"></span>
                   <span class="line -bottom"></span>
                 </a>
+                <script>
+                  document.getElementById("info").addEventListener("click", () => {
+                    window.location.href = "nosotros.html";
+                  });
+                </script>
               </div>
             </div>
             </div>

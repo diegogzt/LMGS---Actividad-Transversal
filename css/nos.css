@@ -41,5 +41,53 @@ html {
 }
 
 * {
-    color: #000000;
+    color: #ffffff;
+}
+
+
+#main-1{
+    background-color: rgb(22, 22, 22);
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-wrap: wrap;
+}
+header * {
+    color: #FFFFFF;
+}
+
+.punto{
+    color: #FFFFFF;
+    width: 8px;
+    height: 8px;
+    margin: 0px;
+    border-radius: 1em;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 20px yellow ;
+    opacity: 0;
+    transition: 0.1s linear;
+
+
+}
+
+.punto:hover{
+    opacity: 1;
+    animation: loco 5s linear delay iteration-count direction fill-mode;
+}
+@keyframes loco {
+    0%{
+        .punto{
+            opacity: 0;
+        }
+    }
+    10%{
+        .punto {
+                opacity: 1;
+            }
+    }
+    100%{
+        .punto {
+                opacity: 0;
+            }
+    }
 }
