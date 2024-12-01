@@ -49,8 +49,7 @@
 
 .logo {
     width: min-content;
-    filter: invert();
-
+    
 }
 
 .titulo {
@@ -64,6 +63,14 @@
     justify-content: space-around;
 }
 
+.loguito{
+    width: 80px;
+    margin-top: 0.6em;
+    filter: invert();
+}
+#logo{
+    filter: invert();
+}
 #nav2{
     display: none;
 }

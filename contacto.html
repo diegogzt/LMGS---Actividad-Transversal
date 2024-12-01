@@ -19,10 +19,10 @@
         <div class="header">
             <a href="index.html" id="a-todo">
                 <div class="logo">
-                    <img id="logo" src="img/index/pngegg.png" alt="logo" srcset="">
+                    <img id="logo" class="loguito" style="filter: invert(100%);" src="img/index/pngegg.png" alt="logo" srcset="">
                 </div>
                 <div class="titulo">
-                    <h1>Meteora</h1>
+                    <h1 id="meteora">Meteora</h1>
                 </div>
             </a>
             <nav id="nav1">
@@ -99,7 +99,7 @@
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <fieldset>
                         <input type="hidden" name="access_key" value="63d4c4cf-5f90-45d3-b48c-cec144b76ff9">
-                        <h2 class="font"> Rellenar formulario completo:</h2>
+                        <h2 id="titulo-form" class="font"> Rellenar formulario completo:</h2>
                         <ul id="formulario">
                             <div class="apt">
                                     <input type="input" class="form__field font" placeholder="Name" name="name" id='name' required />
@@ -132,6 +132,10 @@
             </div>
         </div>
     </main>
+    <div class="circle parabola"></div>
+    <div class="circle parabola-inversa"></div>
+    <div class="circle linear-1"></div>
+    <div class="circle linear-2"></div>
 </body>
 
 </html>

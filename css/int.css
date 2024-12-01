@@ -21,7 +21,7 @@ body{
     --header: linear-gradient(180deg, rgba(0, 0, 0, 0.636) 0%, rgba(1, 0, 18, 0.533) 30%, rgba(255, 255, 255, 0.008) 100%);
     --font-color: #ffff;
     --primary-color: #11151c;
-    --secundary-color: #13161d;
+    --secundary-color: #000000;
 }
 
 html {
@@ -52,12 +52,163 @@ video{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
 }
 
 #main-2{
-    width: 40dvw;
-    height: 100dvh;
-    border-radius: 4em;
-    background-color: #000000;
+    width: 100dvw;
+    height: 140dvh;
+    background: rgb(0, 0, 0);
+    padding: 0px;    
 }
 
+
+
+#main-2-2 {
+    width: 100dvw;
+    height: 100dvh;
+    padding: 0px;
+}
+
+#main-3{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    width: 100dvw;
+    height: 120dvh;
+    padding: 0px;
+    background-color: #0000007b;
+    overflow: hidden;
+    box-shadow: 0px -2px 1px 40px rgb(0, 0, 0);
+}
+
+#myVideo{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+
+#myVideo2 {
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.h1{
+    margin: 0px;
+    font-size: 8rem;
+    text-wrap: wrap;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 2px 16px #654B70;
+}
+
+h1,p{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    max-width: max-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.img-shadow{
+    filter: drop-shadow(1px 1px 10px #ffffff);
+    width: 65%;
+}
+
+.container-father{
+    height: 50dvh;
+    display: flex;
+    flex-direction: column;    
+        width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+}
+.container-child{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-text{
+    width: 65%;
+    margin-top: 2rem;
+    backdrop-filter: blur(20px);
+    background-color: #ffffff08;
+    padding: 1rem;
+    border-radius: 1em;
+}
+
+.font-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+}
+
+.title{
+    flex-direction: column;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.container-tittle-chester{
+    text-align: center;
+}
+
+.container-text-chester{
+    text-align: center;
+    width: 50%;
+}
+
+#onml{
+    width: 600px;
+}
+
+.back{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.background{
+    width: 900px;
+    height: 500px;
+    background-color: rgba(47, 48, 47, 0.842);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    animation: back 25s infinite linear both  ;
+}
+
+
+@keyframes back {
+    0%{
+        background-image: url(../img/introduccion/01.jpg);
+    }
+    25%{
+        background-image: url(../img/index/arts.webp);    }
+    50%{
+        background-image: url(../img/introduccion/02.webp);
+    }
+    75%{
+        background-image: url(../img/introduccion/05.jpg);
+    }
+    100%{
+        background-image: url(../img/introduccion/03.jpg);
+    }
+}
