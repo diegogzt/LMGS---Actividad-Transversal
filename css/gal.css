@@ -11,8 +11,8 @@
     --boton-hoover: rgba(0, 0, 0, 0.5);
     --header: linear-gradient(180deg, rgba(0, 0, 0, 0.636) 0%, rgba(1, 0, 18, 0.533) 30%, rgba(255, 255, 255, 0.008) 100%);
     --font-color: #ffff;
-    --primary-color: #11151c;
-    --secundary-color: #1a2332;
+    --primary-color: #ffffff;
+    --secundary-color: #000000;
 }
 html {
     overflow-x: hidden;
@@ -67,42 +67,63 @@ ul, li{
 
 .container-gallery{
     width: 100dvw;
-    height: 100dvh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0%;
 }
 
-.images-items{
-    width: 100dvw;
+
+#main-2{
+    font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-color: var(--primary-color);
+}
+
+.gallery-container {
     display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-        grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    width: 90%;
+    margin: 1px;
 }
 
-.images-items{
-    padding: 0px;
-    padding-inline: 100px;
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    height: 250px;
+    transform: scale(0.8);
+        /* Escala inicial */
+        opacity: 0;
+        /* Opacidad inicial */
 }
-
-.item-picture{
-    max-width: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.133);
-}
-
-.pictures{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    transition: 0.3s linear;
-    filter: saturate(50%);
-}
-
-
-
-.pictures:hover{
+.gallery-item.show {
     opacity: 1;
+    /* Opacidad completa */
+    transform: scale(1);
+    /* Escala original */
+}
 
-    filter: saturate(100%);
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer *{
+    color: #ffffff;
 }

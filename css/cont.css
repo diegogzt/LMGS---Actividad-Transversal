@@ -25,7 +25,12 @@ body {
     --secundary-color: #f1f1f1;
     --tree-color: #FFFFFF; 
     --transparente: #ffffff00; 
-    --fondo: radial-gradient(ellipse at bottom, #101820 0%, #090a0f 100%);
+    --fondo: 
+    rgb(12, 6, 27)    ;
+    /*
+    radial-gradient(ellipse at bottom, #101820 0%, #090a0f 100%)
+    
+    */
     --medio-black: #0000009a;
     --medio-white: #ffffff29;}
 
